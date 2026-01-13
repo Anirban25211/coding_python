@@ -1,0 +1,7 @@
+n = int(input("Enter the number of terms: "))
+x, y=0, 1
+count = 0
+while count < n:
+    print(x ,end=" ")
+    x, y =y, x+y
+    count += 1   
