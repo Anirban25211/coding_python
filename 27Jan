@@ -1,0 +1,23 @@
+#Tuple & List
+a=(3,4,5)
+b=[3,4,5]
+b[0]=10
+a=(12,)+a[1:]
+print(a)
+print(b)
+c=[0,1,2,3,4,5,6,7,8,9,10]
+print(c[0:])
+print(c[1:10:2])
+print(c[-1:0:-1])
+print(c[-1])
+print(c[::-1])
+#String
+st="Anirban Das"
+print(st)
+print(st[8])
+#palindrom
+if st[0:]== st[::-1] :
+    print("It is Palindrom")
+else :
+    print("It is not Palindrom")
+
