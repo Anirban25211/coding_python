@@ -1,0 +1,21 @@
+def power_set(s):
+    
+    if len(s) == 0:
+        return [[]]
+    
+    first = s[0]
+    rest_power_set = power_set(s[1:])
+    
+    new_subsets = []
+    for subset in rest_power_set:
+        new_subsets.append([first] + subset)
+    
+    return rest_power_set + new_subsets
+ 
+elements = input("Enter elements separated by space: ").split()
+
+result = power_set(elements)
+
+print("Power Set:")
+for subset in result:
+    print(subset)
