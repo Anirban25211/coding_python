@@ -1,4 +1,3 @@
-#Tuple & List
 a=(3,4,5)
 b=[3,4,5]
 b[0]=10
@@ -11,11 +10,14 @@ print(c[1:10:2])
 print(c[-1:0:-1])
 print(c[-1])
 print(c[::-1])
-#String
+
+
 st="Anirban Das"
 print(st)
 print(st[8])
-#palindrom
+
+
+
 if st[0:]== st[::-1] :
     print("It is Palindrom")
 else :
